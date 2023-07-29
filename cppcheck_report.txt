@@ -1,0 +1,245 @@
+common/wave.c:94:9: error: Resource leak: f [resourceLeak]
+        return -1;
+        ^
+common/wave.c:104:9: error: Resource leak: f [resourceLeak]
+        return -1;
+        ^
+common/wave.c:110:9: error: Resource leak: f [resourceLeak]
+        return -2;
+        ^
+fft/kiss_fft.c:200:11: style: The scope of the variable 'k' can be reduced. [variableScope]
+    int u,k,q1,q;
+          ^
+fft/kiss_fft.c:365:35: style:inconclusive: Function 'kiss_fft_stride' argument 1 names different: declaration 'cfg' definition 'st'. [funcArgNamesDifferent]
+void kiss_fft_stride(kiss_fft_cfg st,const kiss_fft_cpx *fin,kiss_fft_cpx *fout,int in_stride)
+                                  ^
+fft/kiss_fft.h:106:35: note: Function 'kiss_fft_stride' argument 1 names different: declaration 'cfg' definition 'st'.
+void kiss_fft_stride(kiss_fft_cfg cfg,const kiss_fft_cpx *fin,kiss_fft_cpx *fout,int fin_stride);
+                                  ^
+fft/kiss_fft.c:365:35: note: Function 'kiss_fft_stride' argument 1 names different: declaration 'cfg' definition 'st'.
+void kiss_fft_stride(kiss_fft_cfg st,const kiss_fft_cpx *fin,kiss_fft_cpx *fout,int in_stride)
+                                  ^
+fft/kiss_fft.c:365:85: style:inconclusive: Function 'kiss_fft_stride' argument 4 names different: declaration 'fin_stride' definition 'in_stride'. [funcArgNamesDifferent]
+void kiss_fft_stride(kiss_fft_cfg st,const kiss_fft_cpx *fin,kiss_fft_cpx *fout,int in_stride)
+                                                                                    ^
+fft/kiss_fft.h:106:86: note: Function 'kiss_fft_stride' argument 4 names different: declaration 'fin_stride' definition 'in_stride'.
+void kiss_fft_stride(kiss_fft_cfg cfg,const kiss_fft_cpx *fin,kiss_fft_cpx *fout,int fin_stride);
+                                                                                     ^
+fft/kiss_fft.c:365:85: note: Function 'kiss_fft_stride' argument 4 names different: declaration 'fin_stride' definition 'in_stride'.
+void kiss_fft_stride(kiss_fft_cfg st,const kiss_fft_cpx *fin,kiss_fft_cpx *fout,int in_stride)
+                                                                                    ^
+fft/kiss_fft.c:31:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB( *Fout2 ,  *Fout , t );
+        ^
+fft/kiss_fft.c:32:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADDTO( *Fout ,  t );
+        ^
+fft/kiss_fft.c:61:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB( scratch[5] , *Fout, scratch[1] );
+        ^
+fft/kiss_fft.c:62:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADDTO(*Fout, scratch[1]);
+        ^
+fft/kiss_fft.c:63:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADD( scratch[3] , scratch[0] , scratch[2] );
+        ^
+fft/kiss_fft.c:64:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB( scratch[4] , scratch[0] , scratch[2] );
+        ^
+fft/kiss_fft.c:65:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB( Fout[m2], *Fout, scratch[3] );
+        ^
+fft/kiss_fft.c:69:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADDTO( *Fout , scratch[3] );
+        ^
+fft/kiss_fft.c:108:10: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+         C_ADD(scratch[3],scratch[1],scratch[2]);
+         ^
+fft/kiss_fft.c:109:10: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+         C_SUB(scratch[0],scratch[1],scratch[2]);
+         ^
+fft/kiss_fft.c:118:10: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+         C_ADDTO(*Fout,scratch[3]);
+         ^
+fft/kiss_fft.c:162:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADD( scratch[7],scratch[1],scratch[4]);
+        ^
+fft/kiss_fft.c:163:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB( scratch[10],scratch[1],scratch[4]);
+        ^
+fft/kiss_fft.c:164:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADD( scratch[8],scratch[2],scratch[3]);
+        ^
+fft/kiss_fft.c:165:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB( scratch[9],scratch[2],scratch[3]);
+        ^
+fft/kiss_fft.c:176:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB(*Fout1,scratch[5],scratch[6]);
+        ^
+fft/kiss_fft.c:177:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADD(*Fout4,scratch[5],scratch[6]);
+        ^
+fft/kiss_fft.c:184:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADD(*Fout2,scratch[11],scratch[12]);
+        ^
+fft/kiss_fft.c:185:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB(*Fout3,scratch[11],scratch[12]);
+        ^
+fft/kiss_fft.c:223:17: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+                C_ADDTO( Fout[ k ] ,t);
+                ^
+fft/kiss_fft.c:205:45: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+    kiss_fft_cpx * scratch = (kiss_fft_cpx*)KISS_FFT_TMP_ALLOC(sizeof(kiss_fft_cpx)*p);
+                                            ^
+fft/kiss_fft.c:370:48: warning: Obsolete function 'alloca' called. In C99 and later it is recommended to use a variable length array instead. [allocaCalled]
+        kiss_fft_cpx * tmpbuf = (kiss_fft_cpx*)KISS_FFT_TMP_ALLOC( sizeof(kiss_fft_cpx)*st->nfft);
+                                               ^
+fft/kiss_fftr.c:61:30: style:inconclusive: Function 'kiss_fftr' argument 1 names different: declaration 'cfg' definition 'st'. [funcArgNamesDifferent]
+void kiss_fftr(kiss_fftr_cfg st,const kiss_fft_scalar *timedata,kiss_fft_cpx *freqdata)
+                             ^
+fft/kiss_fftr.h:37:30: note: Function 'kiss_fftr' argument 1 names different: declaration 'cfg' definition 'st'.
+void kiss_fftr(kiss_fftr_cfg cfg,const kiss_fft_scalar *timedata,kiss_fft_cpx *freqdata);
+                             ^
+fft/kiss_fftr.c:61:30: note: Function 'kiss_fftr' argument 1 names different: declaration 'cfg' definition 'st'.
+void kiss_fftr(kiss_fftr_cfg st,const kiss_fft_scalar *timedata,kiss_fft_cpx *freqdata)
+                             ^
+fft/kiss_fftr.c:117:31: style:inconclusive: Function 'kiss_fftri' argument 1 names different: declaration 'cfg' definition 'st'. [funcArgNamesDifferent]
+void kiss_fftri(kiss_fftr_cfg st,const kiss_fft_cpx *freqdata,kiss_fft_scalar *timedata)
+                              ^
+fft/kiss_fftr.h:43:31: note: Function 'kiss_fftri' argument 1 names different: declaration 'cfg' definition 'st'.
+void kiss_fftri(kiss_fftr_cfg cfg,const kiss_fft_cpx *freqdata,kiss_fft_scalar *timedata);
+                              ^
+fft/kiss_fftr.c:117:31: note: Function 'kiss_fftri' argument 1 names different: declaration 'cfg' definition 'st'.
+void kiss_fftri(kiss_fftr_cfg st,const kiss_fft_cpx *freqdata,kiss_fft_scalar *timedata)
+                              ^
+fft/kiss_fftr.c:89:5: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+    CHECK_OVERFLOW_OP(tdc.r ,+, tdc.i);
+    ^
+fft/kiss_fftr.c:90:5: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+    CHECK_OVERFLOW_OP(tdc.r ,-, tdc.i);
+    ^
+fft/kiss_fftr.c:106:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADD( f1k, fpk , fpnk );
+        ^
+fft/kiss_fftr.c:107:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB( f2k, fpk , fpnk );
+        ^
+fft/kiss_fftr.c:141:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADD (fek, fk, fnkc);
+        ^
+fft/kiss_fftr.c:142:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB (tmp, fk, fnkc);
+        ^
+fft/kiss_fftr.c:144:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_ADD (st->tmpbuf[k],     fek, fok);
+        ^
+fft/kiss_fftr.c:145:9: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        C_SUB (st->tmpbuf[ncfft - k], fek, fok);
+        ^
+ft8/decode.c:173:38: style:inconclusive: Function 'ft8_find_sync' argument 1 names different: declaration 'power' definition 'wf'. [funcArgNamesDifferent]
+int ft8_find_sync(const waterfall_t* wf, int num_candidates, candidate_t heap[], int min_score)
+                                     ^
+ft8/decode.h:68:42: note: Function 'ft8_find_sync' argument 1 names different: declaration 'power' definition 'wf'.
+    int ft8_find_sync(const waterfall_t* power, int num_candidates, candidate_t heap[], int min_score);
+                                         ^
+ft8/decode.c:173:38: note: Function 'ft8_find_sync' argument 1 names different: declaration 'power' definition 'wf'.
+int ft8_find_sync(const waterfall_t* wf, int num_candidates, candidate_t heap[], int min_score)
+                                     ^
+ft8/decode.c:316:36: style:inconclusive: Function 'ft8_decode' argument 1 names different: declaration 'power' definition 'wf'. [funcArgNamesDifferent]
+bool ft8_decode(const waterfall_t* wf, const candidate_t* cand, message_t* message, int max_iterations, decode_status_t* status)
+                                   ^
+ft8/decode.h:77:40: note: Function 'ft8_decode' argument 1 names different: declaration 'power' definition 'wf'.
+    bool ft8_decode(const waterfall_t* power, const candidate_t* cand, message_t* message, int max_iterations, decode_status_t* status);
+                                       ^
+ft8/decode.c:316:36: note: Function 'ft8_decode' argument 1 names different: declaration 'power' definition 'wf'.
+bool ft8_decode(const waterfall_t* wf, const candidate_t* cand, message_t* message, int max_iterations, decode_status_t* status)
+                                   ^
+ft8/pack.c:225:25: style: Redundant condition: If 'EXPR == ' '', the comparison 'EXPR != 0' is always true. [redundantCondition]
+    while (*text == ' ' && *text != 0)
+                        ^
+ft8/pack.c:34:18: style: Variable 'nnum' is assigned a value that is never used. [unreadVariable]
+        int nnum = 0, nlet = 0;
+                 ^
+ft8/pack.c:34:28: style: Variable 'nlet' is assigned a value that is never used. [unreadVariable]
+        int nnum = 0, nlet = 0;
+                           ^
+ft8/unpack.c:340:47: style:inconclusive: Function 'unpack77_fields' argument 2 names different: declaration 'field1' definition 'call_to'. [funcArgNamesDifferent]
+int unpack77_fields(const uint8_t* a77, char* call_to, char* call_de, char* extra)
+                                              ^
+ft8/unpack.h:14:51: note: Function 'unpack77_fields' argument 2 names different: declaration 'field1' definition 'call_to'.
+    int unpack77_fields(const uint8_t* a77, char* field1, char* field2, char* field3);
+                                                  ^
+ft8/unpack.c:340:47: note: Function 'unpack77_fields' argument 2 names different: declaration 'field1' definition 'call_to'.
+int unpack77_fields(const uint8_t* a77, char* call_to, char* call_de, char* extra)
+                                              ^
+ft8/unpack.c:340:62: style:inconclusive: Function 'unpack77_fields' argument 3 names different: declaration 'field2' definition 'call_de'. [funcArgNamesDifferent]
+int unpack77_fields(const uint8_t* a77, char* call_to, char* call_de, char* extra)
+                                                             ^
+ft8/unpack.h:14:65: note: Function 'unpack77_fields' argument 3 names different: declaration 'field2' definition 'call_de'.
+    int unpack77_fields(const uint8_t* a77, char* field1, char* field2, char* field3);
+                                                                ^
+ft8/unpack.c:340:62: note: Function 'unpack77_fields' argument 3 names different: declaration 'field2' definition 'call_de'.
+int unpack77_fields(const uint8_t* a77, char* call_to, char* call_de, char* extra)
+                                                             ^
+ft8/unpack.c:340:77: style:inconclusive: Function 'unpack77_fields' argument 4 names different: declaration 'field3' definition 'extra'. [funcArgNamesDifferent]
+int unpack77_fields(const uint8_t* a77, char* call_to, char* call_de, char* extra)
+                                                                            ^
+ft8/unpack.h:14:79: note: Function 'unpack77_fields' argument 4 names different: declaration 'field3' definition 'extra'.
+    int unpack77_fields(const uint8_t* a77, char* field1, char* field2, char* field3);
+                                                                              ^
+ft8/unpack.c:340:77: note: Function 'unpack77_fields' argument 4 names different: declaration 'field3' definition 'extra'.
+int unpack77_fields(const uint8_t* a77, char* call_to, char* call_de, char* extra)
+                                                                            ^
+ft8/unpack.c:276:9: style: Variable 'n12' is assigned a value that is never used. [unreadVariable]
+    n12 = (a77[0] << 4); //11 ~4  : 8
+        ^
+ft8/unpack.c:277:9: style: Variable 'n12' is assigned a value that is never used. [unreadVariable]
+    n12 |= (a77[1] >> 4); //3~0 : 12
+        ^
+test.c:127:5: portability: %lu in format string (no. 1) requires 'unsigned long' but the argument type is 'size_t {aka unsigned long}'. [invalidPrintfArgType_uint]
+    printf("FFT work area = %lu\n", fft_work_size);
+    ^
+decode_ft8.c:50:0: style: The function 'blackman_i' is never used. [unusedFunction]
+
+^
+ft8/pack.c:101:0: style: The function 'chkcall' is never used. [unusedFunction]
+
+^
+test.c:18:0: style: The function 'convert_8bit_to_6bit' is never used. [unusedFunction]
+
+^
+ft8/text.c:85:0: style: The function 'fmtmsg' is never used. [unusedFunction]
+
+^
+ft8/decode.c:469:0: style: The function 'ft8_decode_multi_symbols' is never used. [unusedFunction]
+
+^
+decode_ft8.c:41:0: style: The function 'hamming_i' is never used. [unusedFunction]
+
+^
+ft8/text.c:50:0: style: The function 'is_space' is never used. [unusedFunction]
+
+^
+fft/kiss_fft.c:385:0: style: The function 'kiss_fft_cleanup' is never used. [unusedFunction]
+
+^
+fft/kiss_fft.c:390:0: style: The function 'kiss_fft_next_fast_size' is never used. [unusedFunction]
+
+^
+fft/kiss_fftr.c:117:0: style: The function 'kiss_fftri' is never used. [unusedFunction]
+
+^
+ft8/ldpc.c:28:0: style: The function 'ldpc_decode' is never used. [unusedFunction]
+
+^
+decode_ft8.c:220:0: style: The function 'monitor_reset' is never used. [unusedFunction]
+
+^
+ft8/text.c:210:0: style: The function 'nchar' is never used. [unusedFunction]
+
+^
+test.c:104:0: style: The function 'test_tones' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
